@@ -1,0 +1,43 @@
+.Specs-Main-Con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.Table-Con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Specs-Info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Specs-Table{
+    width: 70%;
+    
+}
+
+.Specs-Row{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.085);
+    border-radius: 20px;
+}
+
+.Specs-Header{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.Specs-Data{
+    width: 50%;
+}

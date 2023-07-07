@@ -1,0 +1,36 @@
+.carousel-con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-car-con{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+
+.carousel-images{
+    display: flex;
+    overflow-y: auto;
+    width: 90%;
+    img{
+        width: 30%;
+    }
+}
+
+.name-con{
+    width: 100%;
+    padding: 50px 0;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
