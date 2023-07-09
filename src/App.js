@@ -4,6 +4,7 @@ import Home from './Home';
 import Products from './Products';
 import Navbar from './components/Nav';
 import Footer from './components/Footer';
+import Item from './components/SpecProduct'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Home/>}/>
           <Route path='/Products' exact element={<Products/>}/>
+          <Route path='/product/:productId' exact element={<Item />}></Route>
         </Routes>
       </Router>
       <Footer />
