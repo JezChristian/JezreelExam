@@ -43,8 +43,8 @@ function App() {
         {ProdInfo && currentItem===0 ? (<div> </div>) : (<div className='Prev-Mouse'>
         <button onClick={()=>setCurrentItem(currentItem-1)}>
           <span>
-          <img src={ProdInfo[currentItem-1].thumbnails[0]} />
-            </span>
+            <img src={ProdInfo[currentItem-1].thumbnails[0]} />
+          </span>
             <p>
               {ProdInfo[currentItem-1].name}
             </p>

@@ -2,15 +2,10 @@ import React from 'react'
 import Mouse from "./assets/WM2-1.png"
 import ProdInfo from "./products.json"
 import "./scss/Products.scss"
-import {useNavigate, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 function Products() {
 
-  const navigate = useNavigate();
-
-  const specProd = () =>{
-    navigate("/Item")
-  }
   return (
     <div className='Prod-Main-Con'>
       <div className='Products-Con'>
@@ -19,10 +14,11 @@ function Products() {
 
           {ProdInfo && ProdInfo.map(product => {
             return (
-              <Link to={`/product/${product.productId}`} key={product.productId}>
-              <div className="Prod-Item" onClick={specProd}>
+              
+              <Link to={`/product/${product.productId}`} key={product.productId} >
+              <div className="Prod-Item" >
               <div className='Prod-Img-Con'>
-                <img src={Mouse} alt='Product Item #' />
+                <img src={product.thumbnails[0]} alt='Product Item #' />
               </div>
               <div className='Prod-Name-Con'>
                 <label> {product.name}</label>

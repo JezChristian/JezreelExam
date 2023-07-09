@@ -50,7 +50,7 @@
   line-height: normal;
   max-width: 100%;
   overflow: visible;
-  padding: 2px 84px;
+  padding: 2px 10%;
   position: relative;
   text-align: center;
   text-transform: none;
@@ -94,6 +94,12 @@
       display: block;
       animation: fade-in 3s;
     }
+  }
+
+  .Next-Mouse,
+  .Prev-Mouse{
+    bottom: 100px;
+    position: fixed !important;;
   }
 
   .Next-Mouse{
@@ -171,7 +177,18 @@
   img{
     width: 80px;
   }
-
-
   }
   
+  @media only screen and (max-width: 700px){
+
+    .button-wrapper{
+      width: 80%;
+    }
+
+    .Next-Mouse,
+    .Prev-Mouse{
+      bottom: 100px;
+      position:fixed;
+    }
+    
+  }
