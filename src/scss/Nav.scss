@@ -2,7 +2,7 @@ nav{
     display: flex;
     background-color: #1d1d1d;
     height: 40px;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 0px 2%;
 
@@ -51,3 +51,28 @@ nav{
         }
     }
 }
+
+.logo-menu{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-menu{
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+
+    .logo-menu{
+        ul{
+            display: none;
+        }
+    }
+    .side-menu{
+        display: block;
+    }
+    
+  }

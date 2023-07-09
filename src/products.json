@@ -87,7 +87,7 @@
       ]
     },
     {
-      "productId": "CM_WM2",
+      "productId": "CM_WM2_2",
       "name": "WM2",
       "image": "./assets/WM2-1.png",
       "brochure":
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "productId": "CM_WM2",
+      "productId": "CM_WM2_2.1",
       "name": "WM2",
       "image": "./assets/WM2-1.png",
       "brochure":
@@ -167,7 +167,7 @@
       ]
     },
     {
-      "productId": "CM_MG40",
+      "productId": "CM_MG40_3",
       "name": "MG40",
       "image": "'assets/WM2-1.png",
       "brochure":
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "productId": "CM_WM2",
+      "productId": "CM_WM2_4",
       "name": "WM2",
       "image": "./assets/WM2-1.png",
       "brochure":

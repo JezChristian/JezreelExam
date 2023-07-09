@@ -4,7 +4,6 @@ import ProdInfo from "../products.json"
 
 
 function Carousel(index) {
-    console.log(index)
   return (
     <div className='carousel-con'>
 
