@@ -40,14 +40,26 @@ function App() {
         </div>
         {displayBrochure ? <Brochure index={currentItem}/> : <Specs index={currentItem}/>}
 
-        {ProdInfo && currentItem==0 ? (<div> </div>) : (<div className='Prev-Mouse'>
-        <button onClick={()=>setCurrentItem(currentItem-1)}><span><img src={Mouse}/></span><p>{ProdInfo[currentItem-1].name}</p></button>
+        {ProdInfo && currentItem===0 ? (<div> </div>) : (<div className='Prev-Mouse'>
+        <button onClick={()=>setCurrentItem(currentItem-1)}>
+          <span>
+          <img src={ProdInfo[currentItem-1].thumbnails[0]} />
+            </span>
+            <p>
+              {ProdInfo[currentItem-1].name}
+            </p>
+            </button>
         </div>)}
         
 
         {ProdInfo && ProdInfo.length>currentItem+1 ? (
           <div className='Next-Mouse'>
-          <button onClick={()=>setCurrentItem(currentItem+1)}><span><img src={Mouse}/></span><p>{ProdInfo[currentItem+1].name}</p></button>
+          <button onClick={()=>setCurrentItem(currentItem+1)}>
+            <span>
+              <img src={ProdInfo[currentItem+1].thumbnails[0]} />
+              
+              </span>
+              <p>{ProdInfo[currentItem+1].name}</p></button>
         </div>
         ) : (<div> </div>)}
         
