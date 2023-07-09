@@ -99,7 +99,11 @@
   .Next-Mouse,
   .Prev-Mouse{
     bottom: 100px;
-    position: fixed !important;;
+    position: fixed !important;
+
+    p{
+      animation: fade-in 2s;
+    }
   }
 
   .Next-Mouse{
