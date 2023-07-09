@@ -50,6 +50,7 @@
         font-size: 14px;
         transition: .3s ease-in-out;
         cursor: pointer;
+        animation: fade-in .5s;
 
         img{
             width: 100px;
@@ -66,9 +67,9 @@
     }
 }
 
-.try{
-    display: none;
-}
+
+
+
 
 @media only screen and (max-width: 700px){
     .Prod-List{
@@ -84,4 +85,6 @@
                 }
         }
     }
+
+
 }

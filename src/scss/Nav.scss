@@ -20,7 +20,7 @@ nav{
         height: 100%;
         align-items: center;
         font-size: 12px;
-        transition: .3s ease-in;
+        // transition: .3s ease-in;
 
         span{
             height: 100%;
@@ -37,7 +37,7 @@ nav{
         li{
             margin: 0px 5%;
             cursor: pointer;
-            transition: .3s ease-in;
+            // transition: .3s ease-in;
             &:hover{
                 font-size: 14px;
                 transition: .3s ease-in;
@@ -53,7 +53,7 @@ nav{
 }
 
 .logo-menu{
-    width: 55%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
 }
@@ -64,9 +64,79 @@ nav{
     cursor: pointer;
 }
 
+
+.Navigation-Bar{
+    display: flex;
+    width: 50%;
+    transition: 1s ease-in;
+    animation: fade-in 1s;
+}
+    .navbar #close   {
+        display: none;
+    }
+    
+    .navbar #open{
+        display: block;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.863);
+        backdrop-filter: blur(3px);
+        box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.603);
+        color: white;
+        display: flex;
+        transition: 1s ease-in;
+        animation: fade-in 1s;
+        z-index: 1;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            font-size: 25px;
+
+
+
+            li{
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+
+                &:hover{
+                    font-size: 30px;  
+                }
+            }
+
+            span{
+                position: absolute;
+                top: 30%;
+            }
+        }
+        .side-menu svg{
+            margin: 20px 0 0 20px;
+            scale: 1.8;
+        }
+    }
+    
+    @media only screen and (min-width: 600px) {
+        .navbar #open  {
+          display: none;
+        }
+      }
+
+
+
 @media only screen and (max-width: 700px){
 
-    .logo-menu{
+    .navbar .Navigation-Bar{
+        display: none;
+    }
+
+     .logo-menu{
         ul{
             display: none;
         }
@@ -74,5 +144,4 @@ nav{
     .side-menu{
         display: block;
     }
-    
   }
