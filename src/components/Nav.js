@@ -22,11 +22,23 @@ function Nav() {
 
         <div className='Navigation-Bar' >
          <ul>
-              <li><NavLink to='/'>Home</NavLink></li>
-              <li><NavLink to='/Products'>Products</NavLink></li>
+         <li><NavLink to='/'>Home</NavLink></li>
+         <div className='Product-Main'><li><NavLink to='/Products'>Products</NavLink></li>
+                  <div className='Prod-Category'>
+                  <li><NavLink to='/Maintenance'>Mouse</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Keyboards</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Mouse Pads</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Speakers</NavLink></li>
+                  </div>
+                  </div>
+              <li><NavLink to='/Maintenance'>Support</NavLink></li>
+              <li><NavLink to='/Maintenance'>Shop</NavLink></li>
+              <li><NavLink to='/Maintenance'>Contact</NavLink></li>
+
+              {/* Real Links If Continued */}
+              {/* <li><NavLink to='/Shop'>Shop</NavLink></li>
               <li><NavLink to='/Support'>Support</NavLink></li>
-              <li><NavLink to='/Shop'>Shop</NavLink></li>
-              <li><NavLink to='/Contact'>Contact</NavLink></li>
+              <li><NavLink to='/Contact'>Contact</NavLink></li> */}
               <span><AiOutlineSearch/></span>
               
           </ul>
@@ -38,12 +50,25 @@ function Nav() {
 
             <div className='Side-Navigation-Bar' >
             <ul>
+            <span><AiOutlineSearch/></span>
                   <li><NavLink to='/'>Home</NavLink></li>
-                  <li><NavLink to='/Products'>Products</NavLink></li>
+                  <div className='Product-Main'><li><NavLink to='/Products'>Products</NavLink></li>
+                  <div className='Prod-Category'>
+                  <li><NavLink to='/Maintenance'>Mouse</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Keyboards</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Mouse Pads</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Speakers</NavLink></li>
+                  </div>
+                  </div>
+                  <li><NavLink to='/Maintenance'>Support</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Shop</NavLink></li>
+                  <li><NavLink to='/Maintenance'>Contact</NavLink></li>
+                  
+                  {/* Real Links If Continued */}
+                  {/* <li><NavLink to='/Shop'>Shop</NavLink></li>
                   <li><NavLink to='/Support'>Support</NavLink></li>
-                  <li><NavLink to='/Shop'>Shop</NavLink></li>
-                  <li><NavLink to='/Contact'>Contact</NavLink></li>
-                  <span><AiOutlineSearch/></span>
+                  <li><NavLink to='/Contact'>Contact</NavLink></li> */}
+                  
                   
               </ul>
             </div> 
